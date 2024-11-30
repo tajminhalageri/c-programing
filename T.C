@@ -1,21 +1,15 @@
 #include<stdio.h>
+
+//function declaration(prototype)
+void greet();
+
 int main()
 {
-	FILE *file;
-	char data[500];
-
-	printf("Enter data to write to the file\n");
-	gets(data);
-
-	file = fopen("output.txt","w");
-	if(file == NULL)
-	{
-		printf("error opening file!\n");
-		return 1;
-	}
-	fprintf(file,"%s",data);
-	fclose(file);
-
-	printf("Data return to file successfully\n");
+	greet();//Function call
 	return 0;
 }
+
+//Funtion definition
+void greet(){
+	printf("hello, Welcome to the c Programing Training Session\n");
+	}
